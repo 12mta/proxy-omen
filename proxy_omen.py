@@ -3,8 +3,7 @@ from bs4 import BeautifulSoup
 import json
 import re
 from time import sleep
-#import urllib2
-ptyp = "socks5"
+ptyp = "http"
 annon_level = "elite"
 working_ips = []
 
@@ -38,7 +37,7 @@ def Main():
         for ip in ip_list:
             proxy_url = "{}://{}".format(ptyp, ip)
             pre_proxie = {"https": proxy_url}
-            ddd
+
             #print("tedsting: " + ip)
 
             sleep(4)
